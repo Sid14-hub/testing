@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter';
+}
+.header{
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 32%;
+    margin: 0px 30px;
+    padding: 1%;
+}
+.nav-links ul li{
+    display: inline-block;  /*This makes the items of  lists in horizontal*/
+    margin-top: 10px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2px 5px;
+    margin-top: 5px;
+    color: white;
+    transition: 1s;
+}
+.nav-links ul li a:hover{
+    color: #626364;
+}
+.btn button{
+    margin-right:20px;
+    cursor: pointer;
+}
+.btn button{
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(202, 66, 242) 0%, rgb(106, 66, 242) 39%, rgb(66, 148, 242) 75%, rgb(66, 181, 242) 100%, rgb(125, 185, 232) 100%);
+    color: azure;
+    border-style: none;
+}
+.header::before{
+    content: "";
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 1;
+}
+.btn i{
+    display: none;
+}
+nav .fa{
+    color: rgb(70, 69, 69);
+    font-size: 22px;
+    margin: 10px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+.link{
+    padding:3% ;
+}
+@media(max-width:855px){
+    .btn button{
+    display: none;
+    }
+    .btn i{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        width: 100vw;
+        top: 45px;
+        left: 0;
+        text-align: center;
+        background: rgb(49, 49, 49);
+        justify-content: center;
+        display: none;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+
+}
+/* ---------------------DOWNLOAD--------------- */
+.dwlnd{
+    text-align: center;
+    position: relative;
+}
+.dwlnd .hero{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.dwlnd span{
+    color: #97a7af;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    
+}
+.dwlnd::before{
+    content: "";
+    background: #151313;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 1;
+}
+.dwlnd .hero h1{
+    position: relative;
+    margin: 25px 0px;
+    font-size: 52px;
+    font-weight: 600;
+    color: white;
+    animation-name: b-t;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    
+}
+@keyframes b-t{
+    0%{
+        bottom: -250px;
+
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+.dwlnd .link a{
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 25px;
+    color: white;
+    margin: 1%;
+}
+.dwlnd .link{
+   margin-top: 80px;
+}
+.dwlnd .link #bt1{
+    position: relative;
+    background: linear-gradient(to right, rgb(202, 66, 242) 0%, rgb(106, 66, 242) 39%, rgb(66, 148, 242) 75%, rgb(66, 181, 242) 100%, rgb(125, 185, 232) 100%);
+    animation-name: l-r;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+   
+}
+@keyframes l-r{
+    0%{
+        left: -250px;
+
+    }
+    100%{
+       left: 0;
+    }
+}
+.dwlnd .link #bt2{
+    position: relative;
+    background-color: rgb(59, 59, 59);
+    animation-name: r-l;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    
+}
+@keyframes r-l{
+    0%{
+        right: -250px;
+
+    }
+    100%{
+       right: 0;
+    }
+}
+.dwlnd .link #bt2:hover{
+    background: linear-gradient(to right, rgb(202, 66, 242) 0%, rgb(106, 66, 242) 39%, rgb(66, 148, 242) 75%, rgb(66, 181, 242) 100%, rgb(125, 185, 232) 100%);
+}
+.dwlnd .hero-pic{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-top: 0;
+    overflow: hidden;
+    
+}
+.dwlnd img{
+    width: 70%;
+}
+@media(max-width:855px){
+     .dwlnd .link{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 44%;
+        
+    }
+    .dwlnd h1{
+        font-size: 35px;
+    }
+    
+}
+/* ----------------------------- personalized mix of tracks ----------------------------- */
+.personalized{
+    padding: 5%;
+    display: flex;
+}
+.personalized .pic img{
+    margin-right: 100px;
+    width: 100%;
+}
+.content_per h2{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.content_per{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    text-align: left;
+}
+.content_per div{
+    margin-bottom: 20px;
+}
+.num{
+    display: flex;
+}
+.num p{
+    margin:10px;
+}
+@media(max-width:855px){
+    .personalized{
+        flex-direction: column;
+    }
+    .num{
+        flex-direction: column;
+    }
+    .personalized .pic img{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .num img{
+        width: 70px;
+    }
+    .content_per{
+        padding-left: 0;
+    }
+    .content_per h2{
+        font-size: 20px;
+    }
+}
+/* -----------------------heart charity foundation.---------------------- */
+.charity{
+    position: relative;
+   
+}
+.charity::before{
+    content: "";
+    background: #F5F7F9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+}
+.charity1{
+    display: flex;
+    padding: 3%;
+}
+.content-charity{
+    padding: 8%;
+    width: 40%;
+   
+}
+.content-charity h1{
+    font-size: 32px;
+} 
+.pic-img{
+    display: flex;
+    margin: 10px;
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    
+}
+.pimg{
+    margin-top: 5%;
+    margin-left: 0;
+    padding: 2%;
+}
+.pimg img{
+    width: 100%;
+}
+.pic-img img{
+    margin-right: 20px;
+   
+}
+@media(max-width:855px){
+    .charity1{
+        flex-direction: column;
+    }
+    .content-charity h1{
+        font-size: 16px;
+    }
+    .content-charity{
+        padding: 2%;
+        width: 86%;
+    }
+    .pic-img{
+        width: 100%;
+    }
+}
+/* ------------------ seamless -------------------- */
+.seamless{
+    text-align: center;
+    padding: 3%;
+}
+
+.seamless h1{
+    margin-bottom: 3%;
+}
+.seamless p{
+    padding: 30px;
+    padding-top: 0;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.seamless-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    vertical-align: center;
+}
+.seamless img{
+    margin: 0 30px;
+}
+.seam h3{
+    margin: 25px 0;
+}
+.seam p{
+    padding: 10%;
+}
+@media(max-width:855px){
+    .seamless p{
+        padding: 30px;
+        padding-top: 0;
+    }
+}
+/* ------------------------Subscription--------------------- */
+.subscribe{
+    text-align: center;
+    position: relative;
+    padding: 5%;
+}
+.subscribe::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #F5F7F9;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+.subscribe1 h1{
+    margin: 3%;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.subscribe .subscribe1 p{
+   text-align: center;
+}
+.subs-box{
+    display: flex;
+    justify-content: center;   
+}
+.subs-box .box{
+    margin: 3%;
+    padding: 4%;
+    text-align: left;
+    background: white;
+    border-radius: 10px;
+    width: 18%;
+}
+.subs-box .box h4{
+    color: rgb(74, 74, 255);
+    margin-bottom: 20px;
+}
+.subs-box .box h4 #ss{
+    font-size: 30px;
+    font-weight: 600;
+}
+.subs-box .box #up_part{
+    border-bottom: 3px solid #F5F7F9;
+}
+.subs-box .box #up_part p{
+    text-align: left;
+}
+.subs-box .box #list ul{
+    list-style: none;
+    line-height: 1.8rem;
+    margin-top: 20px;
+}
+.subs-box .box #list ul li{
+    margin: 10px 0;
+}
+.subs-box .box:hover {
+ color: white;
+ background-color: #151313;
+ transition: 0.5s;
+}
+.subs-box .box:hover #list ul li i{
+    color: white;
+}
+.subs-box .box:hover #list ul li{
+    color: #626364;
+}
+.box .btn button{
+    width: 50%;
+    margin: 20px 0;
+}
+.subs-box .box:hover .btn button{
+    background: #151313;
+    border: 1px solid rgb(74, 74, 255);
+    color: rgb(74, 74, 255);
+}
+@media(min-width:601px) and (max-width:855px){
+    .subs-box{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box .btn button{
+        display: block;
+    }
+    .subs-box .box{
+        width: 34%;
+        margin-left: 30%;
+    }
+}
+@media(max-width:600px){
+    .subs-box{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box .btn button{
+        display: block;
+    }
+    .subs-box .box{
+        width: 95%;
+        margin-left: 0;
+    }
+}
