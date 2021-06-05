@@ -81,6 +81,7 @@ nav .fa{
         background: rgb(49, 49, 49);
         justify-content: center;
         display: none;
+        z-index: 2;
     }
     .nav-links ul li{
         display: block;

@@ -12,7 +12,7 @@
     <section class="header">
     <nav>
         <a href="index1.html"><img src="img/logo.jpg" alt="logo"></a>
-        <div class="nav-links">   
+        <div class="nav-links" id="myLinks">   
             <ul>
                 <li class="list"><a href="#"> Home     </a></li>
                 <li class="list"><a href="#"> Features </a></li>
@@ -24,7 +24,7 @@
         </div> 
        <div class="btn">
         <button class="btn">SIGN IN</button>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" onclick="myFunction()" ></i>
         </div>
     </nav>
     </section>
@@ -187,5 +187,16 @@
 
 </div>
 </section>
+
+<script>
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </body>
 </html>
