@@ -200,6 +200,9 @@ nav .fa{
         flex-basis: 44%;
         
     }
+    .dwlnd .link a{
+        font-size:small;
+    }
     .dwlnd h1{
         font-size: 35px;
     }
