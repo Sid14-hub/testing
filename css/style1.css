@@ -74,20 +74,24 @@ nav .fa{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         width: 100vw;
         top: 45px;
         left: 0;
+        height: 220px;
         text-align: center;
         background: rgb(49, 49, 49);
         justify-content: center;
-        display: none;
+        transform: translateY(-125%);
         z-index: 2;
+        transition: 0.5s ease-in-out;
     }
     .nav-links ul li{
         display: block;
     }
-
+    .nav-links.active{
+        transform: translateY(0);
+    }
 }
 /* ---------------------DOWNLOAD--------------- */
 .dwlnd{
@@ -200,8 +204,6 @@ nav .fa{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        flex-basis: 44%;
-        
     }
     .dwlnd .link a{
         font-size:small;

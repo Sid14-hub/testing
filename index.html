@@ -24,7 +24,7 @@
         </div> 
        <div class="btn">
         <button class="btn">SIGN IN</button>
-        <i class="fa fa-bars" onclick="myFunction()" ></i>
+        <i class="fa fa-bars"  id="btn_1"></i>
         </div>
     </nav>
     </section>
@@ -236,16 +236,13 @@
     <p>Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Siddhant</p>
 </div>
 </section>
-
 <script>
-    function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+    const nav = document.getElementById('myLinks');
+    const btn = document.getElementById('btn_1');
+    btn.addEventListener('click',()=>{
+        console.log("hii");
+        nav.classList.toggle('active');
+    });
 </script>
 </body>
 </html>
