@@ -31,7 +31,7 @@
     <!-- ------------------------ download ------------------------- -->
     <section class="dwlnd">
         <div class="hero">
-        <span>
+        <span id="sText" >
             Intuitive. Powerful. Runs everywhere
         </span>
         <h1>
@@ -243,6 +243,17 @@
         console.log("hii");
         nav.classList.toggle('active');
     });
+
+    let sText = document.getElementById('sText').innerText;
+    let index = 0;
+    function writeText(){
+        document.getElementById('sText').innerText = sText.slice(0, index);
+        index++;
+        if(index>sText.length-1){
+            index = 0;
+        }
+    }
+    setInterval(writeText,100);
 </script>
 </body>
 </html>
